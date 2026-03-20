@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "bundler",
+        "target": "ESNext",
+        "module": "ESNext",
+        "verbatimModuleSyntax": true,
+        "isolatedModules": true,
+        "strict": true,
+        "lib": ["ESNext", "DOM"],
+        "outDir": "./dist"
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+}
