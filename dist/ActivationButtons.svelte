@@ -536,7 +536,7 @@ C11.1,6.5,9.9,5.1,8.2,5L8.2,5z"
 
 <div class="activation-buttons" data-theme={theme}>
     {@render LogoHorizontal("var(--ab-color-text-primary)", 130, "small")}
-    {#if code}
+    {#if code && code !== ""}
         {@render Header()}
         {@render Buttons()}
         {@render LocaleSelector()}
