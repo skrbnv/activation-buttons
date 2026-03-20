@@ -255,13 +255,22 @@
     function buildOldLink() {
         return `https://ru.m8.tel?ref=${code}`;
     }
+
+    const flagUrls: Record<string, string> = import.meta.glob(
+        './flags/language/*.svg',
+        { eager: true, query: '?url', import: 'default' }
+    );
+
+    function getFlagUrl(country: string): string {
+        return flagUrls[`./flags/language/${country}.svg`] ?? '';
+    }
 </script>
 
 {#snippet Flag(country: string, size: number)}
     <img
         width={size}
         height={size}
-        src="/images/flags_circle/language/{country}.svg"
+        src={getFlagUrl(country)}
         alt={country}
         class="flag default"
     />
