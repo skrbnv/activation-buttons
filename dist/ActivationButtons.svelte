@@ -567,9 +567,8 @@ C11.1,6.5,9.9,5.1,8.2,5L8.2,5z"
         gap: 10px;
         color: var(--color-text-primary);
         .button {
-            background-color: transparent;
-            border: 1px solid var(--color-accent);
             background-color: var(--color-accent);
+            border: 1px solid var(--color-accent);
             color: #ffffff;
             font-size: 14px;
             line-height: 1.65;
@@ -582,6 +581,13 @@ C11.1,6.5,9.9,5.1,8.2,5L8.2,5z"
             flex-direction: row;
             gap: 4px;
             width: 100%;
+            padding: 10px 15px;
+            border-radius: var(--border-radius-button, 8px);
+            cursor: pointer;
+            box-sizing: border-box;
+            &:focus {
+                outline: none;
+            }
         }
     }
 

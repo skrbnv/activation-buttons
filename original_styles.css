@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Medium.woff2') format('woff2'),
+        url('/fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Regular.woff2') format('woff2'),
+        url('/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Bold.woff2') format('woff2'),
+        url('/fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-SemiBold.woff2') format('woff2'),
+        url('/fonts/Roboto-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+[data-theme="light"] {
+    --color-background-primary: #efeff4;
+    --color-background-secondary: #ffffff;
+    --color-background-top-panel: #f2f2f2;
+    --color-background-bottom-panel: #f2f2f2;
+    --color-bottom-panel-border: #d5d5d5;
+    --color-bottom-panel-inactive: #8e8e93;
+    --color-text-primary: #000;
+    --color-error: #ff3b30;
+    --color-text-secondary: #8e8e93;
+    --color-text-tertiary: #6d6d72;
+    --color-accent: #3b8fbb;
+    --color-placeholder-color: darkgray;
+    --color-spinner-petals: #8e8e93;
+    --color-border: #e5e5e5;
+}
+
+[data-theme="dark"] {
+    --color-background-primary: #000000;
+    --color-background-secondary: #262f37;
+    --color-background-top-panel: #111518;
+    --color-background-bottom-panel: #111518;
+    --color-bottom-panel-border: #38383A;
+    --color-bottom-panel-inactive: #8e8e93;
+    --color-border: #4b4b4d;
+    --color-text-primary: #ffffff;
+    --color-error: #eb5545;
+    --color-text-secondary: #7a8c97;
+    --color-text-tertiary: #8794a1;
+    --color-accent: #0088cc;
+    --color-placeholder-color: #808192;
+    --color-spinner-petals: #ffffff;
+}
+
+:root {
+    --color-success: rgb(82, 196, 82);
+    --color-warning: rgb(252, 205, 62);
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+body {
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+pre {
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+:root {
+    --color-veil: rgba(0, 0, 0, 0.6);
+    --color-m8-blue: #09b7ff;
+    font-size: 16px;
+    color: var(--color-text-primary);
+    background-color: var(--color-background-primary);
+    --border-radius-default: 12px;
+    --border-radius-button: 8px;
+    --box-shadow-default: rgba(0, 0, 0, 0.15) 1px 1px 7px 0px;
+
+    /* Responsive CSS */
+    --mobile-width-max: 660px;
+    --tablet-width-max: 1024px;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+}
+
+
+select,
+input,
+textarea {
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px 18px;
+    border: 1px solid var(--color-text-secondary);
+    border-radius: var(--border-radius-button);
+    outline: none;
+}
+
+input::placeholder {
+    color: var(--color-placeholder-color);
+}
+
+button,
+a.button {
+    background-color: transparent;
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.65;
+    text-decoration: none;
+    /* ! */
+    padding: 10px 15px;
+    border-radius: var(--border-radius-button);
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.lite {
+        border: 1px solid var(--color-text-secondary);
+    }
+
+    &.dark {
+        background-color: var(--color-text-primary);
+        border: 1px solid var(--color-text-primary);
+        color: var(--color-background-primary);
+    }
+
+    &.secondary {
+        background-color: var(--color-text-secondary);
+        border: 1px solid var(--color-text-secondary);
+        color: white;
+
+        h1 {
+            color: var(--color-text-primary);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1;
+        }
+    }
+
+    &.small {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    &.accented {
+        background-color: var(--color-accent);
+        color: white;
+        border: 1px solid var(--color-accent);
+    }
+
+    &.wide {
+        width: 100%;
+    }
+
+    &.short {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    &.borderless {
+        border: none;
+    }
+
+    &.disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        pointer-events: none;
+        filter: grayscale(1);
+    }
+}

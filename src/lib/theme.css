@@ -1,0 +1,17 @@
+[data-theme="light"] {
+    --color-background-secondary: #ffffff;
+    --color-text-primary: #000;
+    --color-text-secondary: #8e8e93;
+    --color-accent: #3b8fbb;
+}
+
+[data-theme="dark"] {
+    --color-background-secondary: #262f37;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #7a8c97;
+    --color-accent: #0088cc;
+}
+
+:root {
+    --border-radius-button: 8px;
+}

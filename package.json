@@ -1,6 +1,6 @@
 {
     "name": "activation-buttons",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "type": "module",
     "scripts": {
         "build": "svelte-package -i src/lib",
@@ -11,7 +11,8 @@
             "types": "./dist/index.d.ts",
             "svelte": "./dist/index.js",
             "default": "./dist/index.js"
-        }
+        },
+        "./theme.css": "./dist/theme.css"
     },
     "main": "./dist/index.js",
     "svelte": "./dist/index.js",
