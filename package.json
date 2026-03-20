@@ -1,6 +1,6 @@
 {
     "name": "activation-buttons",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "type": "module",
     "scripts": {
         "build": "svelte-package -i src/lib",

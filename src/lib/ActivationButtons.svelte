@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    let { type, code } = $props();
+    let { type, code, theme = "dark" } = $props<{ type?: string; code?: string; theme?: "light" | "dark" }>();
 
     let locale: string = $state("en");
     let localeDropdownVisible: boolean = $state(false);
@@ -519,14 +519,32 @@ C11.1,6.5,9.9,5.1,8.2,5L8.2,5z"
     {/if}
 {/snippet}
 
-<div class="activation-buttons">
-    {@render LogoHorizontal("var(--color-text-primary)", 130, "small")}
-    {@render Header()}
-    {@render Buttons()}
-    {@render LocaleSelector()}
+<div class="activation-buttons" data-theme={theme}>
+    {@render LogoHorizontal("var(--ab-color-text-primary)", 130, "small")}
+    {#if code}
+        {@render Header()}
+        {@render Buttons()}
+        {@render LocaleSelector()}
+    {/if}
 </div>
 
 <style>
+    .activation-buttons[data-theme="light"] {
+        --ab-color-background-secondary: #ffffff;
+        --ab-color-text-primary: #000000;
+        --ab-color-text-secondary: #8e8e93;
+        --ab-color-accent: #3b8fbb;
+        --ab-border-radius-button: 8px;
+    }
+
+    .activation-buttons[data-theme="dark"] {
+        --ab-color-background-secondary: #262f37;
+        --ab-color-text-primary: #ffffff;
+        --ab-color-text-secondary: #7a8c97;
+        --ab-color-accent: #0088cc;
+        --ab-border-radius-button: 8px;
+    }
+
     .activation-buttons {
         display: flex;
         flex-direction: column;
@@ -537,12 +555,12 @@ C11.1,6.5,9.9,5.1,8.2,5L8.2,5z"
         width: 300px;
         padding: 40px;
         border-radius: 10px;
-        background: var(--color-background-secondary, #ffffff);
+        background: var(--ab-color-background-secondary);
         box-sizing: border-box;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
         font-family: Roboto, sans-serif;
         font-size: 16px;
-        color: var(--color-text-primary, #000);
+        color: var(--ab-color-text-primary);
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-rendering: optimizeLegibility;
@@ -574,8 +592,8 @@ C11.1,6.5,9.9,5.1,8.2,5L8.2,5z"
         width: 100%;
         gap: 10px;
         .button {
-            background-color: var(--color-accent, #3b8fbb);
-            border: 1px solid var(--color-accent, #3b8fbb);
+            background-color: var(--ab-color-accent);
+            border: 1px solid var(--ab-color-accent);
             color: #ffffff;
             font-size: 14px;
             line-height: 1.65;
@@ -589,7 +607,7 @@ C11.1,6.5,9.9,5.1,8.2,5L8.2,5z"
             gap: 4px;
             width: 100%;
             padding: 10px 15px;
-            border-radius: var(--border-radius-button, 8px);
+            border-radius: var(--ab-border-radius-button);
             cursor: pointer;
             box-sizing: border-box;
             &:focus {
@@ -623,7 +641,7 @@ C11.1,6.5,9.9,5.1,8.2,5L8.2,5z"
         top: 50%;
         transform: translateY(-50%);
         width: 100%;
-        background: var(--color-background-secondary, #ffffff);
+        background: var(--ab-color-background-secondary);
         border-radius: 10px;
         padding: 40px 10px;
         border: 1px solid rgba(128, 128, 128, 0.2);
@@ -649,12 +667,13 @@ C11.1,6.5,9.9,5.1,8.2,5L8.2,5z"
         margin: 0;
         border: none;
         background: none;
-        color: var(--color-text-primary, #000);
+        color: var(--ab-color-text-primary);
         column-gap: 5px;
         position: relative;
         cursor: pointer;
         font-family: Roboto, sans-serif;
         font-size: 14px;
+        border-radius: var(--ab-border-radius-button);
         &:focus {
             outline: none;
         }
@@ -670,7 +689,8 @@ C11.1,6.5,9.9,5.1,8.2,5L8.2,5z"
             height: 0px;
             border-style: solid;
             border-width: 6px 6px 0 6px;
-            border-color: var(--color-text-secondary, #8e8e93) transparent transparent transparent;
+            border-color: var(--ab-color-text-secondary) transparent
+                transparent transparent;
             position: absolute;
             right: 10px;
             top: 50%;
