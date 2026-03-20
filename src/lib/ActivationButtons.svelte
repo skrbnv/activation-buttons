@@ -209,60 +209,67 @@
     }
 
     function buildTelegramLink() {
+        // telegram and max use their own locale
+        const line = (source ? `${source}-` : "") + code;
         switch (type) {
             case "e":
-                return `https://t.me/m8tel_bot?start=${source}-${code}`;
+                return `https://t.me/m8tel_bot?start=${line}`;
             case "old":
-                return `https://t.me/m8tel_bot?start=${code}`;
+                return `https://t.me/m8tel_bot?start=${line}`;
             default:
-                return `https://t.me/m8tel_bot?start=s-${code}`;
+                return `https://t.me/m8tel_bot?start=s-${line}`;
         }
     }
 
     function buildVKLink() {
+        const line = (source ? `${source}-` : "") + code + "-" + locale;
         switch (type) {
             case "e":
-                return `https://vk.com/app51912191#start=${source}-${code}-${locale}`;
+                return `https://vk.com/app51912191#start=${line}`;
             case "old":
-                return `https://vk.com/app51912191#start=${code}-${locale}`;
+                return `https://vk.com/app51912191#start=${line}`;
             default:
-                return `https://vk.com/app51912191#start=s-${code}-${locale}`;
+                return `https://vk.com/app51912191#start=s-${line}`;
         }
     }
 
     function buildWebLink() {
+        const line = (source ? `${source}-` : "") + code + "-" + locale;
         switch (type) {
             case "e":
-                return `https://web.m8.tel?ref=${source}-${code}-${locale}`;
+                return `https://web.m8.tel?ref=${line}`;
             case "old":
-                return `https://web.m8.tel?ref=${code}-${locale}`;
+                return `https://web.m8.tel?ref=${line}`;
             default:
-                return `https://web.m8.tel?ref=s-${code}-${locale}`;
+                return `https://web.m8.tel?ref=s-${line}`;
         }
     }
 
     function buildMaxLink() {
+        // telegram and max use their own locale
+        const line = (source ? `${source}-` : "") + code;
         switch (type) {
             case "e":
-                return `https://max.m8.tel?start=${source}-${code}`;
+                return `https://max.m8.tel?start=${line}`;
             case "old":
-                return `https://max.m8.tel?start=${code}`;
+                return `https://max.m8.tel?start=${line}`;
             default:
-                return `https://max.m8.tel?start=s-${code}`;
+                return `https://max.m8.tel?start=s-${line}`;
         }
     }
 
     function buildOldLink() {
+        // old activation login uses the code only
         return `https://ru.m8.tel?ref=${code}`;
     }
 
     const flagUrls: Record<string, string> = import.meta.glob(
-        './flags/language/*.svg',
-        { eager: true, query: '?url', import: 'default' }
+        "./flags/language/*.svg",
+        { eager: true, query: "?url", import: "default" },
     );
 
     function getFlagUrl(country: string): string {
-        return flagUrls[`./flags/language/${country}.svg`] ?? '';
+        return flagUrls[`./flags/language/${country}.svg`] ?? "";
     }
 </script>
 
