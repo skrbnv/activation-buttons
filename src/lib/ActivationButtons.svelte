@@ -259,24 +259,33 @@
         return `https://ru.m8.tel?ref=${code}`;
     }
 
-    import enFlag from "./flags/language/en.svg?url";
-    import ruFlag from "./flags/language/ru.svg?url";
-    import uzFlag from "./flags/language/uz.svg?url";
-    import kkFlag from "./flags/language/kk.svg?url";
-    import deFlag from "./flags/language/de.svg?url";
-    import esFlag from "./flags/language/es.svg?url";
-    import frFlag from "./flags/language/fr.svg?url";
-    import itFlag from "./flags/language/it.svg?url";
-    import jaFlag from "./flags/language/ja.svg?url";
-    import nlFlag from "./flags/language/nl.svg?url";
-    import ptFlag from "./flags/language/pt.svg?url";
-    import trFlag from "./flags/language/tr.svg?url";
-    import zhFlag from "./flags/language/zh.svg?url";
+    import enFlag from "./flags/en.svg?url";
+    import ruFlag from "./flags/ru.svg?url";
+    import uzFlag from "./flags/uz.svg?url";
+    import kkFlag from "./flags/kk.svg?url";
+    import deFlag from "./flags/de.svg?url";
+    import esFlag from "./flags/es.svg?url";
+    import frFlag from "./flags/fr.svg?url";
+    import itFlag from "./flags/it.svg?url";
+    import jaFlag from "./flags/ja.svg?url";
+    import nlFlag from "./flags/nl.svg?url";
+    import ptFlag from "./flags/pt.svg?url";
+    import trFlag from "./flags/tr.svg?url";
+    import zhFlag from "./flags/zh.svg?url";
 
     const flagUrls: Record<string, string> = {
-        en: enFlag, ru: ruFlag, uz: uzFlag, kk: kkFlag,
-        de: deFlag, es: esFlag, fr: frFlag, it: itFlag,
-        ja: jaFlag, nl: nlFlag, pt: ptFlag, tr: trFlag,
+        en: enFlag,
+        ru: ruFlag,
+        uz: uzFlag,
+        kk: kkFlag,
+        de: deFlag,
+        es: esFlag,
+        fr: frFlag,
+        it: itFlag,
+        ja: jaFlag,
+        nl: nlFlag,
+        pt: ptFlag,
+        tr: trFlag,
         zh: zhFlag,
     };
 
