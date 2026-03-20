@@ -273,7 +273,7 @@
 
     function buildOldLink() {
         // old activation login uses the code only
-        return `https://ru.m8.tel?ref=${code}`;
+        return `https://ru.m8.tel/my/m8tel_bot?ref=${code}`;
     }
 
     import enFlag from "./flags/en.svg?url";
