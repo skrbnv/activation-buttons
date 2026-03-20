@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    let { type, source, code } = $props();
+    let { type, code } = $props();
 
     let locale: string = $state("en");
     let localeDropdownVisible: boolean = $state(false);
@@ -210,51 +210,47 @@
 
     function buildTelegramLink() {
         // telegram and max use their own locale
-        const line = (source ? `${source}-` : "") + code;
         switch (type) {
             case "e":
-                return `https://t.me/m8tel_bot?start=${line}`;
+                return `https://t.me/m8tel_bot?start=${code}`;
             case "old":
-                return `https://t.me/m8tel_bot?start=${line}`;
+                return `https://t.me/m8tel_bot?start=${code}`;
             default:
-                return `https://t.me/m8tel_bot?start=s-${line}`;
+                return `https://t.me/m8tel_bot?start=s-${code}`;
         }
     }
 
     function buildVKLink() {
-        const line = (source ? `${source}-` : "") + code + "-" + locale;
         switch (type) {
             case "e":
-                return `https://vk.com/app51912191#start=${line}`;
+                return `https://vk.com/app51912191#start=${code}-${locale}`;
             case "old":
-                return `https://vk.com/app51912191#start=${line}`;
+                return `https://vk.com/app51912191#start=${code}-${locale}`;
             default:
-                return `https://vk.com/app51912191#start=s-${line}`;
+                return `https://vk.com/app51912191#start=s-${code}-${locale}`;
         }
     }
 
     function buildWebLink() {
-        const line = (source ? `${source}-` : "") + code + "-" + locale;
         switch (type) {
             case "e":
-                return `https://web.m8.tel?ref=${line}`;
+                return `https://web.m8.tel?ref=${code}-${locale}`;
             case "old":
-                return `https://web.m8.tel?ref=${line}`;
+                return `https://web.m8.tel?ref=${code}-${locale}`;
             default:
-                return `https://web.m8.tel?ref=s-${line}`;
+                return `https://web.m8.tel?ref=s-${code}-${locale}`;
         }
     }
 
     function buildMaxLink() {
         // telegram and max use their own locale
-        const line = (source ? `${source}-` : "") + code;
         switch (type) {
             case "e":
-                return `https://max.m8.tel?start=${line}`;
+                return `https://max.m8.tel?start=${code}`;
             case "old":
-                return `https://max.m8.tel?start=${line}`;
+                return `https://max.m8.tel?start=${code}`;
             default:
-                return `https://max.m8.tel?start=s-${line}`;
+                return `https://max.m8.tel?start=s-${code}`;
         }
     }
 
