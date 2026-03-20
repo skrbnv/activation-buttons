@@ -1,6 +1,10 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    let { type, code, theme = "dark" } = $props<{ type?: string; code?: string; theme?: "light" | "dark" }>();
+    let {
+        type,
+        code,
+        theme = "dark",
+    } = $props<{ type?: string; code?: string; theme?: "light" | "dark" }>();
 
     let locale: string = $state("en");
     let localeDropdownVisible: boolean = $state(false);
@@ -25,6 +29,7 @@
                 VK: "VK",
                 Web: "Web",
                 Max: "MAX",
+                Old: "Other options",
             },
         },
         ru: {
@@ -38,6 +43,7 @@
                 VK: "VK",
                 Web: "Сайт",
                 Max: "MAX",
+                Old: "Другие варианты",
             },
         },
         uz: {
@@ -51,6 +57,7 @@
                 VK: "VK",
                 Web: "Veb",
                 Max: "MAX",
+                Old: "Boshqa variantlar",
             },
         },
         kk: {
@@ -64,6 +71,7 @@
                 VK: "VK",
                 Web: "Сайт",
                 Max: "MAX",
+                Old: "Басқа нұсқалар",
             },
         },
         de: {
@@ -77,6 +85,7 @@
                 VK: "VK",
                 Web: "Web",
                 Max: "MAX",
+                Old: "Weitere Optionen",
             },
         },
         es: {
@@ -90,6 +99,7 @@
                 VK: "VK",
                 Web: "Web",
                 Max: "MAX",
+                Old: "Otras opciones",
             },
         },
         fr: {
@@ -103,6 +113,7 @@
                 VK: "VK",
                 Web: "Web",
                 Max: "MAX",
+                Old: "Autres options",
             },
         },
         it: {
@@ -116,6 +127,7 @@
                 VK: "VK",
                 Web: "Web",
                 Max: "MAX",
+                Old: "Altre opzioni",
             },
         },
         ja: {
@@ -129,6 +141,7 @@
                 VK: "VK",
                 Web: "ウェブサイト",
                 Max: "MAX",
+                Old: "その他のオプション",
             },
         },
         nl: {
@@ -142,6 +155,7 @@
                 VK: "VK",
                 Web: "Web",
                 Max: "MAX",
+                Old: "Andere opties",
             },
         },
         pt: {
@@ -155,6 +169,7 @@
                 VK: "VK",
                 Web: "Site",
                 Max: "MAX",
+                Old: "Outras opções",
             },
         },
         tr: {
@@ -168,6 +183,7 @@
                 VK: "VK",
                 Web: "Web",
                 Max: "MAX",
+                Old: "Diğer seçenekler",
             },
         },
         zh: {
@@ -180,6 +196,7 @@
                 VK: "VK",
                 Web: "网页",
                 Max: "MAX",
+                Old: "其他选项",
             },
         },
     };
@@ -398,7 +415,7 @@
 	c-1.3,0.9-2.4,1.3-3.5,1.3c-1.1,0-3.3-0.6-5-1.2c-2-0.6-3.6-1-3.5-2.1C2.8,19.4,3.6,18.9,5.1,18.2z"
                 />
             </svg>
-            Telegram
+            {t("Telegram")}
         </a>
         <a class="button" href={buildVKLink()}>
             <svg
@@ -419,7 +436,7 @@
 	c-0.8,4.8-4.4,8.3-6.9,9.8c2.5,1.2,6.5,4.2,8,9.8h-5.6c-1.2-3.7-4.2-6.6-8.1-7v7H25.5z"
                 />
             </svg>
-            VK
+            {t("VK")}
         </a>
         <a class="button" href={buildWebLink()}>
             <svg
@@ -435,7 +452,7 @@
 	c-1.4-1.7-4.6-5.6-5.5-6.5s-1.1-0.5-1.8,0.9S15,32,14.5,32.9c-0.4,0.8-1,1.1-1.4-0.2C12.7,31.4,5.8,5.9,5.8,5.9z"
                 />
             </svg>
-            Web
+            {t("Web")}
         </a>
         <a class="button" href={buildMaxLink()}>
             <svg
@@ -457,12 +474,10 @@ C6.6,4.9,5.3,6,5,7.7C4.8,9.2,5.2,11,5.5,11.1c0.2,0,0.6-0.3,0.8-0.6C6.8,10.8,7.3,
 C11.1,6.5,9.9,5.1,8.2,5L8.2,5z"
                 />
             </svg>
-            Max
+            {t("Max")}
         </a>
         {#if type === "old"}
-            <a class="button" href={buildOldLink()}>
-                Use old activation login
-            </a>
+            <a class="button" href={buildOldLink()}>{t("Old")}</a>
         {/if}
     </div>
 {/snippet}
@@ -689,8 +704,8 @@ C11.1,6.5,9.9,5.1,8.2,5L8.2,5z"
             height: 0px;
             border-style: solid;
             border-width: 6px 6px 0 6px;
-            border-color: var(--ab-color-text-secondary) transparent
-                transparent transparent;
+            border-color: var(--ab-color-text-secondary) transparent transparent
+                transparent;
             position: absolute;
             right: 10px;
             top: 50%;
