@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    import availableLocales from "../locales/dict.json";
+    import availableLocales from "./locales/dict.json";
     let {
         type,
         code,
