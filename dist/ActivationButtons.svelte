@@ -96,6 +96,8 @@
     import enFlag from "./flags/en.svg?url";
     import ruFlag from "./flags/ru.svg?url";
     import uzFlag from "./flags/uz.svg?url";
+    import beFlag from "./flags/be.svg?url";
+    import geFlag from "./flags/ge.svg?url";
     import kkFlag from "./flags/kk.svg?url";
     import deFlag from "./flags/de.svg?url";
     import esFlag from "./flags/es.svg?url";
@@ -111,6 +113,8 @@
         en: enFlag,
         ru: ruFlag,
         uz: uzFlag,
+        be: beFlag,
+        ge: geFlag,
         kk: kkFlag,
         de: deFlag,
         es: esFlag,
