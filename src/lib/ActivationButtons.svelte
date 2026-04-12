@@ -46,11 +46,11 @@
         // telegram and max use their own locale
         switch (type) {
             case "e":
-                return `https://t.me/m8tel_bot?start=${code}`;
+                return `tg://resolve?domain=m8tel_bot&start=${code}`;
             case "old":
-                return `https://t.me/m8tel_bot?start=${code}`;
+                return `tg://resolve?domain=m8tel_bot&start=${code}`;
             default:
-                return `https://t.me/m8tel_bot?start=s-${code}`;
+                return `tg://resolve?domain=m8tel_bot&start=s-${code}`;
         }
     }
 
@@ -80,11 +80,11 @@
         // telegram and max use their own locale
         switch (type) {
             case "e":
-                return `https://max.m8.tel?start=${code}`;
+                return `https://max.ru/id7751234164_bot?start=${code}`;
             case "old":
-                return `https://max.m8.tel?start=${code}`;
+                return `https://max.ru/id7751234164_bot?start=${code}`;
             default:
-                return `https://max.m8.tel?start=s-${code}`;
+                return `https://max.ru/id7751234164_bot?start=s-${code}`;
         }
     }
 
