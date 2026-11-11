@@ -3,195 +3,210 @@
     "language": "English",
     "languageEn": "English",
     "dictionary": {
-      "SIM Card Activation": "SIM Card Activation",
-      "Select a service to manage this card:": "Select a service to manage this card:",
+      "eSIM_Card_Activation": "eSIM Card Activation",
+      "Max": "MAX",
+      "Old": "Other options",
+      "Select_a_service_to_manage_this_card": "Select a service to manage this card:",
+      "SIM_Card_Activation": "SIM Card Activation",
       "Telegram": "Telegram",
       "VK": "VK",
-      "Web": "Web",
-      "Max": "MAX",
-      "Old": "Other options"
+      "Web": "Web"
     }
   },
   "ru": {
     "language": "Русский",
     "languageEn": "Russian",
     "dictionary": {
-      "SIM Card Activation": "Активация SIM-карты",
-      "Select a service to manage this card:": "Выберите сервис для управления этой картой:",
+      "eSIM_Card_Activation": "Активация eSIM-карты",
+      "Max": "MAX",
+      "Old": "Другие варианты",
+      "Select_a_service_to_manage_this_card": "Выберите сервис для управления этой картой:",
+      "SIM_Card_Activation": "Активация SIM-карты",
       "Telegram": "Telegram",
       "VK": "VK",
-      "Web": "Сайт",
-      "Max": "MAX",
-      "Old": "Другие варианты"
+      "Web": "Сайт"
     }
   },
   "uz": {
     "language": "O'zbekcha",
     "languageEn": "Uzbek",
     "dictionary": {
-      "SIM Card Activation": "SIM-karta aktivatsiyasi",
-      "Select a service to manage this card:": "Ushbu kartani boshqarish uchun xizmatni tanlang:",
+      "eSIM_Card_Activation": "eSIM-karta aktivatsiyasi",
+      "Max": "MAX",
+      "Old": "Boshqa variantlar",
+      "Select_a_service_to_manage_this_card": "Ushbu kartani boshqarish uchun xizmatni tanlang:",
+      "SIM_Card_Activation": "SIM-karta aktivatsiyasi",
       "Telegram": "Telegram",
       "VK": "VK",
-      "Web": "Veb",
-      "Max": "MAX",
-      "Old": "Boshqa variantlar"
+      "Web": "Veb"
     }
   },
   "kk": {
     "language": "Қазақша",
     "languageEn": "Kazakh",
     "dictionary": {
-      "SIM Card Activation": "SIM-картаны іске қосу",
-      "Select a service to manage this card:": "Бұл картаны басқару үшін қызметті таңдаңыз:",
+      "eSIM_Card_Activation": "eSIM-картаны іске қосу",
+      "Max": "MAX",
+      "Old": "Басқа нұсқалар",
+      "Select_a_service_to_manage_this_card": "Бұл картаны басқару үшін қызметті таңдаңыз:",
+      "SIM_Card_Activation": "SIM-картаны іске қосу",
       "Telegram": "Telegram",
       "VK": "VK",
-      "Web": "Сайт",
-      "Max": "MAX",
-      "Old": "Басқа нұсқалар"
-    }
-  },
-  "be": {
-    "language": "Белорусский",
-    "languageEn": "Belorussian",
-    "dictionary": {
-      "SIM Card Activation": "Актывацыя SIM-карты",
-      "Select a service to manage this card:": "Выберыце Сэрвіс для кіравання гэтай картай:",
-      "Telegram": "Telegram",
-      "VK": "VK",
-      "Web": "Сайт",
-      "Max": "MAX",
-      "Old": "Іншыя варыянты"
+      "Web": "Сайт"
     }
   },
   "ge": {
     "language": "ქართული",
     "languageEn": "Georgian",
     "dictionary": {
-      "SIM Card Activation": "SIM ბარათის გააქტიურება",
-      "Select a service to manage this card:": "აირჩიეთ სერვისი ამ ბარათის მართვისთვის:",
+      "eSIM_Card_Activation": "eSIM ბარათის გააქტიურება",
+      "Max": "MAX",
+      "Old": "სხვა ვარიანტები",
+      "Select_a_service_to_manage_this_card": "აირჩიეთ სერვისი ამ ბარათის მართვისთვის:",
+      "SIM_Card_Activation": "SIM ბარათის გააქტიურება",
       "Telegram": "Telegram",
       "VK": "VK",
-      "Web": "ვებგვერდი",
+      "Web": "ვებგვერდი"
+    }
+  },
+  "be": {
+    "language": "Белорусский",
+    "languageEn": "Belorussian",
+    "dictionary": {
+      "eSIM_Card_Activation": "Актывацыя eSIM-карты",
       "Max": "MAX",
-      "Old": "სხვა ვარიანტები"
+      "Old": "Іншыя варыянты",
+      "Select_a_service_to_manage_this_card": "Выберыце Сэрвіс для кіравання гэтай картай:",
+      "SIM_Card_Activation": "Актывацыя SIM-карты",
+      "Telegram": "Telegram",
+      "VK": "VK",
+      "Web": "Сайт"
     }
   },
   "de": {
     "language": "Deutsch",
     "languageEn": "German",
     "dictionary": {
-      "SIM Card Activation": "SIM-Karten-Aktivierung",
-      "Select a service to manage this card:": "Wählen Sie einen Dienst zur Verwaltung dieser Karte:",
+      "eSIM_Card_Activation": "eSIM-Karten-Aktivierung",
+      "Max": "MAX",
+      "Old": "Weitere Optionen",
+      "Select_a_service_to_manage_this_card": "Wählen Sie einen Dienst zur Verwaltung dieser Karte:",
+      "SIM_Card_Activation": "SIM-Karten-Aktivierung",
       "Telegram": "Telegram",
       "VK": "VK",
-      "Web": "Web",
-      "Max": "MAX",
-      "Old": "Weitere Optionen"
+      "Web": "Web"
     }
   },
   "es": {
     "language": "Español",
     "languageEn": "Spanish",
     "dictionary": {
-      "SIM Card Activation": "Activación de tarjeta SIM",
-      "Select a service to manage this card:": "Seleccione un servicio para gestionar esta tarjeta:",
+      "eSIM_Card_Activation": "Activación de tarjeta eSIM",
+      "Max": "MAX",
+      "Old": "Otras opciones",
+      "Select_a_service_to_manage_this_card": "Seleccione un servicio para gestionar esta tarjeta:",
+      "SIM_Card_Activation": "Activación de tarjeta SIM",
       "Telegram": "Telegram",
       "VK": "VK",
-      "Web": "Web",
-      "Max": "MAX",
-      "Old": "Otras opciones"
+      "Web": "Web"
     }
   },
   "fr": {
     "language": "Français",
     "languageEn": "French",
     "dictionary": {
-      "SIM Card Activation": "Activation de la carte SIM",
-      "Select a service to manage this card:": "Sélectionnez un service pour gérer cette carte:",
+      "eSIM_Card_Activation": "Activation de la carte eSIM",
+      "Max": "MAX",
+      "Old": "Autres options",
+      "Select_a_service_to_manage_this_card": "Sélectionnez un service pour gérer cette carte:",
+      "SIM_Card_Activation": "Activation de la carte SIM",
       "Telegram": "Telegram",
       "VK": "VK",
-      "Web": "Web",
-      "Max": "MAX",
-      "Old": "Autres options"
+      "Web": "Web"
     }
   },
   "it": {
     "language": "Italiano",
     "languageEn": "Italian",
     "dictionary": {
-      "SIM Card Activation": "Attivazione carta SIM",
-      "Select a service to manage this card:": "Seleziona un servizio per gestire questa carta:",
+      "eSIM_Card_Activation": "Attivazione carta eSIM",
+      "Max": "MAX",
+      "Old": "Altre opzioni",
+      "Select_a_service_to_manage_this_card": "Seleziona un servizio per gestire questa carta:",
+      "SIM_Card_Activation": "Attivazione carta SIM",
       "Telegram": "Telegram",
       "VK": "VK",
-      "Web": "Web",
-      "Max": "MAX",
-      "Old": "Altre opzioni"
+      "Web": "Web"
     }
   },
   "ja": {
     "language": "日本語",
     "languageEn": "Japanese",
     "dictionary": {
-      "SIM Card Activation": "SIMカードの有効化",
-      "Select a service to manage this card:": "このカードを管理するサービスを選択してください:",
+      "eSIM_Card_Activation": "eSIMカードの有効化",
+      "Max": "MAX",
+      "Old": "その他のオプション",
+      "Select_a_service_to_manage_this_card": "このカードを管理するサービスを選択してください:",
+      "SIM_Card_Activation": "SIMカードの有効化",
       "Telegram": "Telegram",
       "VK": "VK",
-      "Web": "ウェブサイト",
-      "Max": "MAX",
-      "Old": "その他のオプション"
+      "Web": "ウェブサイト"
     }
   },
   "nl": {
     "language": "Nederlands",
     "languageEn": "Dutch",
     "dictionary": {
-      "SIM Card Activation": "SIM-kaartactivering",
-      "Select a service to manage this card:": "Selecteer een service om deze kaart te beheren:",
+      "eSIM_Card_Activation": "eSIM-kaartactivering",
+      "Max": "MAX",
+      "Old": "Andere opties",
+      "Select_a_service_to_manage_this_card": "Selecteer een service om deze kaart te beheren:",
+      "SIM_Card_Activation": "SIM-kaartactivering",
       "Telegram": "Telegram",
       "VK": "VK",
-      "Web": "Web",
-      "Max": "MAX",
-      "Old": "Andere opties"
+      "Web": "Web"
     }
   },
   "pt": {
     "language": "Português",
     "languageEn": "Portuguese",
     "dictionary": {
-      "SIM Card Activation": "Ativação do cartão SIM",
-      "Select a service to manage this card:": "Selecione um serviço para gerir este cartão:",
+      "eSIM_Card_Activation": "Ativação da carta eSIM",
+      "Max": "MAX",
+      "Old": "Outras opções",
+      "Select_a_service_to_manage_this_card": "Selecione um serviço para gerir este cartão:",
+      "SIM_Card_Activation": "Ativação do cartão SIM",
       "Telegram": "Telegram",
       "VK": "VK",
-      "Web": "Site",
-      "Max": "MAX",
-      "Old": "Outras opções"
+      "Web": "Site"
     }
   },
   "tr": {
     "language": "Türkçe",
     "languageEn": "Turkish",
     "dictionary": {
-      "SIM Card Activation": "SIM kart etkinleştirme",
-      "Select a service to manage this card:": "Bu kartı yönetmek için bir servis seçin:",
+      "eSIM_Card_Activation": "eSIM kart etkinleştirme",
+      "Max": "MAX",
+      "Old": "Diğer seçenekler",
+      "Select_a_service_to_manage_this_card": "Bu kartı yönetmek için bir servis seçin:",
+      "SIM_Card_Activation": "SIM kart etkinleştirme",
       "Telegram": "Telegram",
       "VK": "VK",
-      "Web": "Web",
-      "Max": "MAX",
-      "Old": "Diğer seçenekler"
+      "Web": "Web"
     }
   },
   "zh": {
     "language": "简体中文",
     "languageEn": "Chinese (Simplified)",
     "dictionary": {
-      "SIM Card Activation": "SIM卡激活",
-      "Select a service to manage this card:": "选择管理此卡的服务:",
+      "eSIM_Card_Activation": "eSIM卡激活",
+      "Max": "MAX",
+      "Old": "其他选项",
+      "Select_a_service_to_manage_this_card": "选择管理此卡的服务:",
+      "SIM_Card_Activation": "SIM卡激活",
       "Telegram": "Telegram",
       "VK": "VK",
-      "Web": "网页",
-      "Max": "MAX",
-      "Old": "其他选项"
+      "Web": "网页"
     }
   }
 }

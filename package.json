@@ -1,10 +1,11 @@
 {
     "name": "activation-buttons",
-    "version": "1.1.7",
+    "version": "1.1.8",
     "type": "module",
     "scripts": {
-        "fetch-locales": "node scripts/fetch-locales.js",
-        "build": "node scripts/fetch-locales.js && svelte-package -i src/lib",
+        "update_locales": "node scripts/update_locales.js",
+        "dev": "npm run update_locales && svelte-package -i src/lib -w",
+        "build": "npm run update_locales && svelte-package -i src/lib",
         "check": "svelte-check --tsconfig ./tsconfig.json"
     },
     "exports": {

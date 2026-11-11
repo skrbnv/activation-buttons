@@ -210,9 +210,9 @@
 {#snippet Header()}
     <div class="header">
         <h3>
-            {#if type === "e"}e{/if}{t("SIM Card Activation")}
+            {t(type === "e" ? "eSIM_Card_Activation" : "SIM_Card_Activation")}
         </h3>
-        <p>{t("Select a service to manage this card:")}</p>
+        <p>{t("Select_a_service_to_manage_this_card")}</p>
     </div>
 {/snippet}
 
